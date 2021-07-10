@@ -1,2 +1,3 @@
 # marketAutoTesting
-Yandex Market testing by selenium + testng on gradle
+Yandex Market testing with selenium + testng + java + gradle
+
