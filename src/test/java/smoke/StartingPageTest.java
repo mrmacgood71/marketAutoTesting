@@ -20,14 +20,12 @@ public class StartingPageTest {
 
     private WebDriverWait chromeWait;
 
-    @BeforeClass
-    public static void setupClass() {
-        WebDriverManager.chromedriver().setup();
-    }
+
 
     @BeforeTest
     public void start() {
-        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         chromeDriver = new ChromeDriver();
         chromeWait = new WebDriverWait(chromeDriver, 10);
     }
@@ -35,12 +33,12 @@ public class StartingPageTest {
     @Test(description = "Testing header search input on the home page")
     public void headerSearch() {
         chromeDriver.get("https://market.yandex.ru/");
+        chromeWait.until(ExpectedConditions.visibilityOf(chromeDriver.findElement(By.id("header-search"))));
         WebElement productsSearch = chromeDriver.findElement(By.id("header-search"));
         productsSearch.clear();
         productsSearch.sendKeys("лыжи");
         chromeDriver.findElement(By.xpath("//button[@data-r]")).click();
-
-        Assert.assertEquals(chromeDriver.getTitle(), "«лыжи» — Результаты поиска — Яндекс.Маркет");
+        chromeWait.until(ExpectedConditions.titleIs("«лыжи» — Результаты поиска — Яндекс.Маркет"));
     }
 
     @AfterTest

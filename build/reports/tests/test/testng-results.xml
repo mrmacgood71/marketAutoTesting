@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Gradle suite" duration-ms="36965" started-at="2021-07-10T01:30:41 MSK" finished-at="2021-07-10T01:31:18 MSK">
+  <suite name="Gradle suite" duration-ms="77837" started-at="2021-07-10T12:13:23 MSK" finished-at="2021-07-10T12:14:41 MSK">
     <groups>
     </groups>
-    <test name="Gradle test" duration-ms="36965" started-at="2021-07-10T01:30:41 MSK" finished-at="2021-07-10T01:31:18 MSK">
+    <test name="Gradle test" duration-ms="77837" started-at="2021-07-10T12:13:23 MSK" finished-at="2021-07-10T12:14:41 MSK">
       <class name="smoke.StartingPageTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="start" is-config="true" duration-ms="13070" started-at="2021-07-10T01:30:41 MSK" finished-at="2021-07-10T01:30:54 MSK">
+        <test-method status="PASS" signature="start()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="start" is-config="true" duration-ms="21526" started-at="2021-07-10T12:13:23 MSK" finished-at="2021-07-10T12:13:44 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="setupClass()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="setupClass" is-config="true" duration-ms="225" started-at="2021-07-10T01:30:54 MSK" finished-at="2021-07-10T01:30:54 MSK">
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="setupClass" is-config="true" duration-ms="2" started-at="2021-07-10T12:13:44 MSK" finished-at="2021-07-10T12:13:44 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method status="PASS" signature="headerSearch()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="headerSearch" duration-ms="21688" started-at="2021-07-10T01:30:54 MSK" description="Testing header search input on the home page" finished-at="2021-07-10T01:31:16 MSK">
+        <test-method status="PASS" signature="headerSearch()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="headerSearch" duration-ms="54529" started-at="2021-07-10T12:13:45 MSK" description="Testing header search input on the home page" finished-at="2021-07-10T12:14:39 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- headerSearch -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="stop" is-config="true" duration-ms="1940" started-at="2021-07-10T01:31:16 MSK" finished-at="2021-07-10T01:31:18 MSK">
+        <test-method status="PASS" signature="stop()[pri:0, instance:smoke.StartingPageTest@75be90b7]" name="stop" is-config="true" duration-ms="1460" started-at="2021-07-10T12:14:39 MSK" finished-at="2021-07-10T12:14:41 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

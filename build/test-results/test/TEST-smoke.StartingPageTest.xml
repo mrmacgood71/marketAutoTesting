@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="smoke.StartingPageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-09T22:30:54" hostname="DESKTOP-FHL2OHE" time="21.688">
+<testsuite name="smoke.StartingPageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-10T09:13:45" hostname="DESKTOP-FHL2OHE" time="54.529">
   <properties/>
-  <testcase name="headerSearch" classname="smoke.StartingPageTest" time="21.688"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-]]></system-err>
+  <testcase name="headerSearch" classname="smoke.StartingPageTest" time="54.529"/>
+  <system-out><![CDATA[wrk
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
