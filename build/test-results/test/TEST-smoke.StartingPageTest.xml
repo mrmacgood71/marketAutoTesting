@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="smoke.StartingPageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-10T09:13:45" hostname="DESKTOP-FHL2OHE" time="54.529">
-  <properties/>
-  <testcase name="headerSearch" classname="smoke.StartingPageTest" time="54.529"/>
-  <system-out><![CDATA[wrk
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

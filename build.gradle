@@ -26,4 +26,5 @@ test {
     useTestNG() {
         useDefaultListeners = true
     }
+    maxParallelForks = 10
 }

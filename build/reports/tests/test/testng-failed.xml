@@ -3,14 +3,33 @@
 <suite verbose="0" name="Failed suite [Gradle suite]">
   <test thread-count="5" verbose="0" name="Gradle test(failed)">
     <classes>
-      <class name="smoke.StartingPageTest">
+      <class name="smoke.ParallelGoogleThirdTest">
         <methods>
+          <include name="thirdSearchingTest"/>
           <include name="start"/>
-          <include name="setupClass"/>
-          <include name="headerSearch"/>
+          <include name="secondSearchingTest"/>
+          <include name="firstSearchingTest"/>
           <include name="stop"/>
         </methods>
-      </class> <!-- smoke.StartingPageTest -->
+      </class> <!-- smoke.ParallelGoogleThirdTest -->
+      <class name="smoke.ParallelGoogleSecondTest">
+        <methods>
+          <include name="start"/>
+          <include name="secondSearchingTest"/>
+          <include name="firstSearchingTest"/>
+          <include name="thirdSearchingTest"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- smoke.ParallelGoogleSecondTest -->
+      <class name="smoke.ParallelGoogleFirstTest">
+        <methods>
+          <include name="start"/>
+          <include name="thirdSearchingTest"/>
+          <include name="secondSearchingTest"/>
+          <include name="firstSearchingTest"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- smoke.ParallelGoogleFirstTest -->
     </classes>
   </test> <!-- Gradle test(failed) -->
 </suite> <!-- Failed suite [Gradle suite] -->
