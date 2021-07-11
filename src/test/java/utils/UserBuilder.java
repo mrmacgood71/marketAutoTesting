@@ -1,4 +1,6 @@
-package pojos;
+package utils;
+
+import pojos.UserPojo;
 
 public class UserBuilder {
    private String email;

@@ -13,6 +13,19 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     compile group: 'org.testng', name: 'testng', version: '7.0.0'
     testImplementation("io.github.bonigarcia:webdrivermanager:4.4.3")
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.4'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.4'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.20'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.46'
+    runtime "mysql:mysql-connector-java:5.1.46"
+
 
 }
 

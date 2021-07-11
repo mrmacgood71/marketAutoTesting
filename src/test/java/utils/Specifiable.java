@@ -4,14 +4,15 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
-public interface RequestSpecs {
+public interface Specifiable {
 
-        public static final RequestSpecification REQRES =
+    String BASE_URL = "https://reqres.in/api";
+
+    RequestSpecification REQRES_USERS =
             new RequestSpecBuilder()
-                    .setBaseUri("https://reqres.in/api")
+                    .setBaseUri(BASE_URL)
                     .setBasePath("/users")
                     .setContentType(ContentType.JSON)
                     .build();
-
 
 }

@@ -1,4 +1,6 @@
-package pojos;
+package utils;
+
+import pojos.UserRequest;
 
 public class CreateUserRequestBuilder {
     private String name;
@@ -14,7 +16,7 @@ public class CreateUserRequestBuilder {
         return this;
     }
 
-    public CreateUserRequest build() {
-        return new CreateUserRequest(name, job);
+    public UserRequest build() {
+        return new UserRequest(name, job);
     }
 }
