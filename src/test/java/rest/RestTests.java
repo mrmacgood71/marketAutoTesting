@@ -21,7 +21,8 @@ public class RestTests implements Specifiable {
 
     @BeforeTest
     public static void prepareUser() {
-        api = new RestWrapper.loginAs("eve.holt@reqres.in","cityslicka");
+
+        api = RestWrapper.loginAs("eve.holt@reqres.in","cityslicka");
     }
 
 

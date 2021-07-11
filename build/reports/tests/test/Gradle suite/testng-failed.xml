@@ -5,7 +5,10 @@
     <classes>
       <class name="rest.RestTests">
         <methods>
-          <include name="getUserByEmail"/>
+          <include name="getUsers"/>
+          <include name="prepareUser"/>
+          <include name="getJSONData"/>
+          <include name="createUser"/>
         </methods>
       </class> <!-- rest.RestTests -->
     </classes>
