@@ -24,7 +24,7 @@ public class StartingPageTest {
 
     private String yandexMarket = "https://market.yandex.ru/";
 
-    @BeforeTest(enabled = false)
+    @BeforeTest
     public void start() {
 //        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
         WebDriverManager.chromedriver().setup();
@@ -63,8 +63,15 @@ public class StartingPageTest {
         chromeDriver.findElement(By.xpath("//span[text()='Войти']")).click();
     }
 
+    @Test
+    public void switchWindow() throws InterruptedException {
+        chromeDriver.get(yandexMarket);
+        chromeDriver.findElement(By.xpath("//div[@data-tid='a3756df5']")).click();
+        chromeDriver.switchTo().frame(2);
+    }
 
-    @AfterTest(enabled = false)
+
+    @AfterTest
     public void stop() {
         chromeDriver.quit();
         chromeDriver = null;

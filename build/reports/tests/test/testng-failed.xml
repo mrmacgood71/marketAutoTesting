@@ -3,14 +3,13 @@
 <suite verbose="0" name="Failed suite [Gradle suite]">
   <test thread-count="5" verbose="0" name="Gradle test(failed)">
     <classes>
-      <class name="rest.RestTests">
+      <class name="smoke.StartingPageTest">
         <methods>
-          <include name="getUsers"/>
-          <include name="prepareUser"/>
-          <include name="getJSONData"/>
-          <include name="createUser"/>
+          <include name="start"/>
+          <include name="switchWindow"/>
+          <include name="stop"/>
         </methods>
-      </class> <!-- rest.RestTests -->
+      </class> <!-- smoke.StartingPageTest -->
     </classes>
   </test> <!-- Gradle test(failed) -->
 </suite> <!-- Failed suite [Gradle suite] -->
